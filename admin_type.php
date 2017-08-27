@@ -12,18 +12,30 @@ $no=1;
 <html>
   <head>
     <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title></title>
   </head>
   <body>
     <?php include "admin_menu.php"; ?>
-    <form method="post" action="add_pro_type.php">
-    เพิ่มประเภทสินค้าใหม่
-    <input type="text" name="typename">
-    <input type="submit" name="submit" value="Submit">
+		<div class="container">
+
+    <form class="form-horizontal" method="post" action="add_pro_type.php">
+		<div class="col-sm-12">
+			<h1 align="center">เพิ่มประเภทสินค้าใหม่</h1>
+		</div>
+		<div class="col-sm-10">
+			<input class="form-control" type="text" name="typename">
+		</div>
+		<div class="col-sm-2">
+			<button class="btn btn-success" type="submit" name="submit" value="Submit">Submit</button>
+		</div>
     </form>
     <?php
-    if($number<>0) {  	echo "<p><b>แสดงประเภทสินค้า</b></p>
-    	<table border='1'>
+    if($number<>0) {  	echo "<h2แสดงประเภทสินค้า</h2>
+    	<table class='table table-hover'>
     	<tr  bgcolor ='#E8E8E8'>
     		<td><center><b>ลำดับ</b></center></td>
     		<td><center><b>ประเภทสินค้า</b></center></td>
@@ -45,5 +57,6 @@ $no=1;
     	mysql_close();
     }
     ?>
+	</div>
   </body>
 </html>
