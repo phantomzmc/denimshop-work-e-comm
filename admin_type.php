@@ -17,6 +17,7 @@ $no=1;
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title></title>
+
   </head>
   <body>
     <?php include "admin_menu.php"; ?>
@@ -33,6 +34,7 @@ $no=1;
 			<button class="btn btn-success" type="submit" name="submit" value="Submit">Submit</button>
 		</div>
     </form>
+
     <?php
     if($number<>0) {  	echo "<h2แสดงประเภทสินค้า</h2>
     	<table class='table table-hover'>
@@ -43,13 +45,20 @@ $no=1;
     		<td><center><b>[ลบ]</b></center></td>
     	</tr> ";
     	while ($rs=mysql_fetch_array($result)) {
-    		$id_type=$rs[type_id];
-    		$name_type=$rs[type_name];
+    		$id_type=$rs['type_id'];
+    		$name_type=$rs['type_name'];
     		echo "
-    		 <tr >	<td><center>$no</center></td>
-    			<td>$name_type</td>
-    			 <td><a href= 'admin_type_edit.php?id_edit=$id_type'>[แก้ไข]</a></td>
-    			<td><a href= 'admin_type_delete.php?id_del=$id_type'>[ลบ]</a></td>
+    		 <tr >
+				 	<td><center>$no</center></td>
+    			<td align='center'>$name_type</td>
+    			 <td align='center'><a href= 'admin_type_edit.php?id_edit=$id_type'>
+					 			<button class='btn btn-warning'>เเก้ไข</button>
+								</a>
+					</td>
+    			<td align='center'><a href= 'admin_type_delete.php?id_del=$id_type'>
+							<button class='btn btn-danger'>ลบ</button>
+							</a>
+					</td>
     		</tr> ";
     			$no++;
     	}

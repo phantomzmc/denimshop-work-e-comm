@@ -15,16 +15,15 @@
               <a class="navbar-brand" href="#">ร้านค้าออนไลน์ <u>สำหรับผู้ดูแลระบบ</u> </a>
             </div>
     <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="admin_product.php">Home</a></li>
         <li><a href="admin_order.php">รายการสั่งซื้อ<span></span></a></li>
         <li><a href="admin_product_add.php">เพิ่มรายการสินค้า</a></li>
         <li><a href="product_list.php">รายการสินค้า</a></li>
         <li><a href="admin_type.php">เพิ่มประเภทสินค้า</a></li>
-        <li><a href="logout.php">ออกจากระบบ</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="../logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
     </ul>
     </div>
     </nav>

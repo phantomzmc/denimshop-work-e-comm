@@ -1,5 +1,5 @@
 <?php
-$id_type_select=$_GET[id_type];
+$id_type_select=$_GET['id_type'];
 ?>
 <html>
 <head>
@@ -20,19 +20,19 @@ $id_type_select=$_GET[id_type];
 						include "type_list.php";
 			?>
 			<td width="580" valign="top"><div align="center">
-				<table width="100%" border="0" cellspacing="4">
+				<table class="table table-hover">
 				<?php
 
 					$sql="select * from product where type_id='$id_type_select'";
 					$result=mysql_db_query($dbname,$sql);
 					  while($rs=mysql_fetch_array($result)) {
-						$id_pro=$rs[pro_id];
+						$id_pro=$rs['pro_id'];
 						$code=sprintf("%05d",$id_pro);
-						$name_pro=$rs[pro_name];
-						$detail_pro=$rs[pro_detail];
-						$ref_id_type=$rs[type_id];
-						$price_pro=$rs[pro_price];
-						$photo_pro=$rs[pro_photo];
+						$name_pro=$rs['pro_name'];
+						$detail_pro=$rs['pro_detail'];
+						$ref_id_type=$rs['type_id'];
+						$price_pro=$rs['pro_price'];
+						$photo_pro=$rs['pro_photo'];
             if($photo_pro=="") {
             								$photo_pro="temp.jpg";
             						}

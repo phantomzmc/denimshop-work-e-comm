@@ -23,7 +23,7 @@ if($name=="") {
 		echo "<h3>error : กรุณาป้อนราคาสินค้า</h3>";
 		exit();
 }
-include "connect.php";
+include "../connect.php";
 $sql="insert into  product values(null,'$name','$ref_id_type','$detail','$price',' ')";
 $result=mysql_db_query($dbname,$sql);
 if($file_pic) {	$array_last=explode(".",$file_pic_name);
@@ -40,7 +40,8 @@ if($file_pic) {	$array_last=explode(".",$file_pic_name);
 		}
 		unlink($file_pic);
 }
+include '../admin_menu.php';
 echo "<h3>เพิ่มรายการสินค้าเรียบร้อยแล้ว</h3>";
-echo "[<a href=admin_product.php>กลับหน้าหลัก</a>] ";
+echo "<a href=../admin_product.php>กลับหน้าหลัก</a> ";
 mysql_close();
 ?>

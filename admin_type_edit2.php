@@ -5,7 +5,7 @@ if($session_adminid<>session_id()) {
 }
 $id_edit=$_POST[id_edit];
 $name=$_POST[name];
-include "connect.php";
+include "../connect.php";
 $sql="update pro_type set  type_name='$name' where type_id='$id_edit' ";
 $result=mysql_db_query($dbname,$sql);
 if($result) {

@@ -35,16 +35,16 @@ $no=1;
 	<td ><center><b> [ลบ]</b></center></td>
 </tr>";
 while($rs=mysql_fetch_array($result)) {
-	$id_pro=$rs[pro_id];
+	$id_pro=$rs['pro_id'];
 	$code_pro=sprintf("%05d",$id_pro);
-	$name_pro=$rs[pro_name];
-	$ref_id_type=$rs[type_id];
-	$price_pro=$rs[pro_price];
-	$photo_pro=$rs[pro_photo];
+	$name_pro=$rs['pro_name'];
+	$ref_id_type=$rs['type_id'];
+	$price_pro=$rs['pro_price'];
+	$photo_pro=$rs['pro_photo'];
 	$sql2="select type_name from pro_type where type_id='$ref_id_type'";
 	$result2=mysql_db_query($dbname,$sql2);
 	$rs2=mysql_fetch_array($result2);
-	$name_type=$rs2[type_name];
+	$name_type=$rs2['type_name'];
 echo "
 <tr>
 <td><center>$no</center></td>
