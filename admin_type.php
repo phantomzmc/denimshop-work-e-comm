@@ -1,4 +1,5 @@
 <?php  //session _start();
+$session_adminid = isset($_POST['sess_adminid']);
 if($session_adminid <> session_id()) {
 	header("Location : login.php"); exit();
 }
@@ -21,22 +22,34 @@ $no=1;
   </head>
   <body>
     <?php include "admin_menu.php"; ?>
-		<div class="container">
 
-    <form class="form-horizontal" method="post" action="add_pro_type.php">
-		<div class="col-sm-12">
-			<h1 align="center">เพิ่มประเภทสินค้าใหม่</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1 align="center">เพิ่มประเภทสินค้าใหม่</h1>
+				</div>
+			</div>
 		</div>
-		<div class="col-sm-10">
-			<input class="form-control" type="text" name="typename">
+
+		<div class="container">
+			<div class="row">
+				<form class="form-horizontal" method="post" action="add_pro_type.php">
+					<div class="col-sm-10">
+						<input class="form-control" type="text" name="typename" placeholder="กรุณากรอกประเภทสินค้า">
+					</div>
+					<div class="col-sm-2">
+						<button class="btn btn-success" type="submit" name="submit" value="Submit">Submit</button>
+					</div>
+			    </form>
+			</div>
 		</div>
-		<div class="col-sm-2">
-			<button class="btn btn-success" type="submit" name="submit" value="Submit">Submit</button>
-		</div>
-    </form>
+		<br>
+
 
     <?php
-    if($number<>0) {  	echo "<h2แสดงประเภทสินค้า</h2>
+    if($number<>0) {
+			echo "<div class='container'>
+				<div class='row'>
     	<table class='table table-hover'>
     	<tr  bgcolor ='#E8E8E8'>
     		<td><center><b>ลำดับ</b></center></td>
@@ -62,7 +75,7 @@ $no=1;
     		</tr> ";
     			$no++;
     	}
-    	echo "</table>";
+    	echo "</table></div></div>";
     	mysql_close();
     }
     ?>

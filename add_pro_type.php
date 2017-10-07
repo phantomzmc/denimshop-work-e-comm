@@ -11,8 +11,9 @@ include "connect.php";
 $sql="insert into  pro_type  values(null,'$name')";
 $result=mysql_db_query("$dbname","$sql");
 if($result) {
+	include 'admin_type.php';
 	echo "<h3>เพิ่มประเภทสินค้าเรียบร้อยแล้ว </h3>";
-	echo "<a href=admin_menu.php>กลับเมนูหลัก</a>";
+	echo "<a href=admin_type.php>กลับเมนูหลัก</a>";
 }
 else {
 	echo "<h3>error : ไม่สามารถเพิ่มประเภทสินค้าได้ </h3>".mysql_error();

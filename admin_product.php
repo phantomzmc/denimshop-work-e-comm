@@ -23,11 +23,12 @@ $no=1;
 <? include "admin_menu.php";
 	if($number<>0) {
 	echo "
-	<p><strong> แสดงสินค้า </strong></p>
+	<br><h1 align='center'>สินค้าทั้งหมด</h1><br>
 	<table class='table table-hover'>
 	<tr bgcolor=#E8E8E8>
 	<td><center><b>ลำดับ</b></center></td>
 	<td ><center><b> รหัสสินค้า</b></center></td>
+	<td> <center><b> รูปภาพ </b></center></td>
 	<td><center><b> ชื่อสินค้า</b></center></td>
 	<td ><center><b> ประเภทสินค้า</b></center></td>
 	<td ><center><b> ราคาสินค้า</b></center></td>
@@ -46,14 +47,16 @@ while($rs=mysql_fetch_array($result)) {
 	$rs2=mysql_fetch_array($result2);
 	$name_type=$rs2['type_name'];
 echo "
-<tr>
+<tr align='center'>
 <td><center>$no</center></td>
 	<td>$code_pro</td>
+	<td><img src='imgProduct/$photo_pro' width='200' height='200'>
+		</td>
 	<td>$name_pro</td>
 	<td>$name_type</td>
 	<td>$price_pro</td>
-	<td><a href= 'admin_product_edit.php?id_edit=$id_pro'>[แก้ไข]</a></td>
-	<td><a href= 'admin_product_delete.php?id_del=$id_pro'  >[ลบ]</a></td>
+	<td><a href= 'admin_product_edit.php?id_edit=$id_pro' class='btn btn-warning'> แก้ไข </a></td>
+	<td><a href= 'admin_product_delete.php?id_del=$id_pro' class='btn btn-danger' > ลบ </a></td>
 </tr> ";
 $no++;
 }

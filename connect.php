@@ -1,7 +1,7 @@
 <?php
 $host="localhost";
 $username="root";
-$password="";
+$password="1234";
 $dbname="ecomdb";
 $cc=mysql_connect($host,$username,$password);
 mysql_select_db("$dbname")or die("cannot select DB");

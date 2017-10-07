@@ -6,13 +6,14 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  font-family: 'Kanit', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
+  font-family: 'Kanit', sans-serif;
 }
 
 article,
@@ -73,6 +74,7 @@ dfn {
 
 h1 {
   font-size: 2em;
+  font-family: 'Kanit', sans-serif;
   margin: 0.67em 0;
 }
 
