@@ -9,10 +9,17 @@ include "../connect.php";
 $sql="update pro_type set  type_name='$name' where type_id='$id_edit' ";
 $result=mysql_db_query($dbname,$sql);
 if($result) {
-	echo "<h3>แก้ไขประเภทสินค้าเรียบร้อยแล้ว</h3>";
-	echo "[ <a href=admin_type.php>กลับเมนูหลัก</a> ] ";
+	echo "<div class='alert alert-success alert-dismissable fade in' align='center'>
+	    <a href='' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+	    <strong>Success!</strong> เพิ่มประเภทสินค้าเรียบร้อย
+			<a href=admin_product.php>กลับหน้าหลัก</a>
+	  </div>";
 } else {
-	echo "<h3> Error  : ไม่สามารถแก้ไขประเภทสินค้าได้ </h3>";
+	echo "<div class='alert alert-danger alert-dismissable fade in' align='center'>
+	    <a href='' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+	    <strong>Error!</strong> เพิ่มประเภทสินค้าผิดพลาด
+			<a href=admin_product.php>กลับหน้าหลัก</a>
+	  </div>";
 }
 mysql_close();
 ?>

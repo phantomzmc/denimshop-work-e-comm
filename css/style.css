@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'icomoon';
+  font-family: 'Kanit', sans-serif;
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
   src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
@@ -11,7 +11,7 @@
 *
 * ======================================================= */
 body {
-  font-family: "Playfair Display", serif;
+  font-family: 'Kanit', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -64,7 +64,7 @@ p {
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -105,7 +105,8 @@ h4{
   padding: 0;
   text-transform: uppercase;
   font-weight: bold;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: 'Kanit', sans-serif;
+
 }
 .fh5co-nav a {
   padding: 5px 10px;
@@ -119,7 +120,7 @@ h4{
 .fh5co-nav .menu-2 li.search {
   float: left;
   width: 83%;
-  font-family: "Playfair Display", serif;
+  font-family: 'Kanit', sans-serif;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -189,7 +190,8 @@ h4{
   margin: 0;
   list-style: none;
   display: inline-block;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: 'Kanit', sans-serif;
+
 }
 .fh5co-nav ul li a {
   font-size: 13px;
@@ -563,7 +565,8 @@ h4{
   position: absolute;
   left: 0;
   top: .05em;
-  font-family: 'icomoon';
+  font-family: 'Kanit', sans-serif;
+
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -628,7 +631,8 @@ h4{
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: 'Kanit', sans-serif;
+
 }
 #fh5co-header .display-tc h2 a,
 #fh5co-counter .display-tc h2 a,
@@ -683,7 +687,8 @@ h4{
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
   letter-spacing: 1px;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: 'Kanit', sans-serif;
+
 }
 #fh5co-counter .feature-center {
   padding: 40px 20px;
@@ -956,7 +961,8 @@ h4{
   padding-left: 30px;
 }
 .fh5co-tabs .fh5co-tab-content-wrap ul li:before {
-  font-family: 'icomoon';
+  font-family: 'Kanit', sans-serif;
+
   position: absolute;
   top: 0;
   left: 0;
@@ -978,7 +984,8 @@ h4{
   background: rgba(0, 0, 0, 0.04);
 }
 .fh5co-tabs .fh5co-tab-content-wrap .feed > div h3 {
-  font-family: "Playfair Display", serif;
+  font-family: 'Kanit', sans-serif;
+
   font-size: 18px;
   display: inline-block;
   padding-right: 20px;
@@ -1031,7 +1038,8 @@ h4{
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 2px;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: 'Kanit', sans-serif;
+
 }
 
 #fh5co-testimonial {
@@ -1247,7 +1255,8 @@ h4{
 #fh5co-offcanvas ul li.search {
   float: left;
   width: 100%;
-  font-family: "Playfair Display", serif;
+  font-family: 'Kanit', sans-serif;
+
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -1322,7 +1331,8 @@ h4{
 #fh5co-offcanvas ul li.offcanvas-has-dropdown > a:after {
   position: absolute;
   right: 0px;
-  font-family: 'icomoon';
+  font-family: 'Kanit', sans-serif;
+
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -1497,7 +1507,8 @@ h4{
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: 'Kanit', sans-serif;
+
   font-size: 16px;
   font-weight: 400;
   -webkit-border-radius: 2px;

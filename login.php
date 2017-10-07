@@ -66,54 +66,9 @@
 </head>
 
 <body>
-
-	<div class="fh5co-loader"></div>
-
-	<div id="page">
-		<nav class="fh5co-nav" role="navigation">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3 col-xs-2">
-						<div id="fh5co-logo"><a href="index.html">#DenimShop.</a></div>
-					</div>
-					<div class="col-md-6 col-xs-6 text-center menu-1">
-						<ul>
-							<li class="has-dropdown">
-								<a href="product.html">สินค้า</a>
-								<ul class="dropdown">
-									<li><a href="single.html">สินค้าทั้งหมด</a></li>
-								</ul>
-							</li>
-							<li><a href="about.html">เกี่ยวกับเรา</a></li>
-							<li class="has-dropdown">
-								<a href="services.html">การชำระเงิน</a>
-								<ul class="dropdown">
-									<li><a href="show_payment.html">การเเจ้งชำระเงิน</a></li>
-									<li><a href="method_payment.html">วิธีการสั่งซื้อ</a></li>
-									<!-- <li><a href="#">Branding</a></li>
-	  								<li><a href="#">API</a></li> -->
-								</ul>
-							</li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-					<div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">
-						<ul>
-							<li class="search">
-								<div class="input-group">
-									<input type="text" placeholder="Search..">
-									<span class="input-group-btn">
-	  						        <button class="btn btn-primary" type="button"><i class="icon-search"></i></button>
-	  						      </span>
-								</div>
-							</li>
-							<li class="shopping-cart"><a href="#" class="cart"><span><small>0</small><i class="icon-shopping-cart"></i></span></a></li>
-						</ul>
-					</div>
-				</div>
-
-			</div>
-		</nav>
+	<?php
+		include 'nav_user.php';
+	 ?>
 
 		<!-- <header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/img_bg_2.jpg);">
 			<div class="overlay"></div>
@@ -177,7 +132,7 @@
 										</div>
 									</div>
 								</form>
-								<form id="register-form" action="https://phpoll.com/register/process" method="post" role="form" style="display: none;">
+								<form id="register-form" action="register_action.php" method="post" role="form" style="display: none;">
 									<div class="form-group">
 										<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
 									</div>

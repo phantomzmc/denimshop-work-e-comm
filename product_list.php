@@ -6,15 +6,26 @@ $id_type_select=$_GET['id_type'];
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<<<<<<< HEAD
+=======
+  <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+>>>>>>> admin
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <title>ร้านค้าออนไลน์</title>
 </head>
 <body>
+<<<<<<< HEAD
   <? include "admin_menu.php";  ?>
 	<table class="table table-hover">
 		<tr>
 			<td width="174" height="200" valign="top" bgcolor="#eaeaea">
+=======
+  <? include "nav_user.php";  ?>
+	<table class="table table-hover">
+		<tr>
+			<td width="174" height="200" valign="top">
+>>>>>>> admin
 			<center><b>ประเภทสินค้า</b></center>
 			<?php include "connect.php";
 						include "type_list.php";
@@ -38,6 +49,7 @@ $id_type_select=$_GET['id_type'];
             						}
             						echo "<tr>
             	<td width='20%' valign='top'>
+<<<<<<< HEAD
             	img src='imgProduct/$photo_pro'>
             		</td>
             <td width='80%' valign='top'>
@@ -46,6 +58,17 @@ $id_type_select=$_GET['id_type'];
             	<b>ราคา  :</b>$price_pro   บาท<br><br>
             	 [<a href='product_view.php?id_pro=$id_pro'>แสดงรายละเอียด </a>]
             	 [<a href='basket_add.php?id_pro=$id_pro'>หยิบใส่ตะกร้า </a>]<br>
+=======
+            	<img src='imgProduct/$photo_pro' width='200' height='200'>
+            		</td>
+            <td width='80%' valign='top'>
+            	<b>รหัสสินค้า  :</b>  $code <br>
+            	<b>ชื่อสินค้า  :</b>  $name_pro<br>
+							<b>ราคา  :</b>  $price_pro   บาท<br><br>
+							<a href='product_view.php?id_pro=$id_pro' class='btn btn-info'>แสดงรายละเอียด</a>
+							<a href='basket_add.php?id_pro=$id_pro' class='btn btn-warning'>หยิบใส่ตะกร้า </a>
+							 <br>
+>>>>>>> admin
             	</td>
             	</tr>";
             	}
