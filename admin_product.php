@@ -19,7 +19,11 @@ $no=1;
 	if($number<>0) {
 	echo "
 	<p><strong> แสดงสินค้า </strong></p>
+<<<<<<< HEAD
 	<table border=1>
+=======
+	<table class='table table-hover'>
+>>>>>>> parent of 7370bbc... final
 	<tr bgcolor=#E8E8E8>
 	<td><center><b>ลำดับ</b></center></td>
 	<td ><center><b> รหัสสินค้า</b></center></td>

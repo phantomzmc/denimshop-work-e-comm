@@ -16,6 +16,7 @@ $no=1;
   </head>
   <body>
     <?php include "admin_menu.php"; ?>
+<<<<<<< HEAD
     <form method="post" action="add_pro_type.php">
     เพิ่มประเภทสินค้าใหม่
     <input type="text" name="typename">
@@ -24,6 +25,25 @@ $no=1;
     <?php
     if($number<>0) {  	echo "<p><b>แสดงประเภทสินค้า</b></p>
     	<table border='1'>
+=======
+		<div class="container">
+
+    <form class="form-horizontal" method="post" action="add_pro_type.php">
+		<div class="col-sm-12">
+			<h1 align="center">เพิ่มประเภทสินค้าใหม่</h1>
+		</div>
+		<div class="col-sm-10">
+			<input class="form-control" type="text" name="typename">
+		</div>
+		<div class="col-sm-2">
+			<button class="btn btn-success" type="submit" name="submit" value="Submit">Submit</button>
+		</div>
+    </form>
+
+    <?php
+    if($number<>0) {  	echo "<h2แสดงประเภทสินค้า</h2>
+    	<table class='table table-hover'>
+>>>>>>> parent of 7370bbc... final
     	<tr  bgcolor ='#E8E8E8'>
     		<td><center><b>ลำดับ</b></center></td>
     		<td><center><b>ประเภทสินค้า</b></center></td>
